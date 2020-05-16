@@ -511,7 +511,6 @@ namespace GK6X
                                                                         }
                                                                         if (keyIndex >= 0)
                                                                         {
-                                                                            Debug.WriteLine(device.State.KeysByLogicCode[keyIndex].KeyName + " = " + (DriverValue)driverValue);
                                                                             driverValues[keyIndex] = driverValue;
                                                                         }
                                                                     }
