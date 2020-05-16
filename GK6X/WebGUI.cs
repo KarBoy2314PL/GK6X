@@ -865,7 +865,7 @@ namespace GK6X
                 }
                 catch(Exception e)
                 {
-                    Program.Log("Exception: + e.ToString());
+                    Program.Log("Exception: " + e.ToString());
                 }
 
                 context.Response.OutputStream.Close();
