@@ -863,9 +863,9 @@ namespace GK6X
                     context.Response.OutputStream.Flush();
                     context.Response.StatusCode = (int)HttpStatusCode.OK;
                 }
-                catch
+                catch(Exception e)
                 {
-                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    Program.Log("Exception: + e.ToString());
                 }
 
                 context.Response.OutputStream.Close();
