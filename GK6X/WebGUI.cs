@@ -509,7 +509,7 @@ namespace GK6X
                                                                                 driverValue = KeyValues.UnusedKeyValue;
                                                                             }
                                                                         }
-                                                                        if (keyIndex >= 0)
+                                                                        if (keyIndex >= 0 && keyIndex < driverValues.Length)
                                                                         {
                                                                             driverValues[keyIndex] = driverValue;
                                                                         }
